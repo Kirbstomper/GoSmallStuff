@@ -1,0 +1,12 @@
+<html lang="en">
+    {{ template "header.html" }}
+    <body>
+<h1>Characters with content for {{.Series}}</h1>
+<ul>
+    {{range $key, $value := .Data}}
+            <li>{{$key}}: <a href="/series//{{$.Series}}/{{$key}}">{{$value}}</a></li>
+    {{end}}
+</ul>
+</body>
+    {{ template "footer.html" }}
+</html>

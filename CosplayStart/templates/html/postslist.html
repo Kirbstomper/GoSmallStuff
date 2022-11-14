@@ -1,0 +1,12 @@
+<html lang="en">
+    {{ template "header.html" }}
+    <body>
+<h1>Posts for {{.Character}} from {{.Series}}</h1>
+<ul>
+    {{range $value := .Data}}
+            <li><a href="/posts/{{$value.Id}}">{{$value.Title}}</a>  By:{{$value.Author}}</li>
+    {{end}}
+</ul>
+</body>
+    {{ template "footer.html" }}
+</html>

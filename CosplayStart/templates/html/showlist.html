@@ -1,0 +1,13 @@
+<html lang="en">
+    {{ template "header.html" }}
+    <body>
+        
+<h1>Shows Availible</h1>
+<ul>
+    {{range $key, $value := .}}
+            <li>{{$key}}: <a href="/series/{{$key}}/">{{$value}}</a></li>
+    {{end}}
+</ul>
+</body>
+    {{ template "footer.html" }}
+</html>
