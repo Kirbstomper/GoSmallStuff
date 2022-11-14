@@ -1,0 +1,7 @@
+# The generated username and password associated
+# with the host that is to be updated.
+username: USERNAME
+password: PASS
+
+# The hostname to be updated.
+hostname: WHATEVERHOSTNAME
